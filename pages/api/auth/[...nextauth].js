@@ -9,6 +9,8 @@ export default NextAuth({
 		maxAge: 30 * 24 * 60 * 60,
 		updateAge: 24 * 60 * 60
 	},
+	database:
+		'mongodb+srv://pa-portfolio:nPjtqLVnUeAgIiFV@cluster0.bhfeh.mongodb.net/PA-Portfolio?retryWrites=true&w=majority',
 	providers: [
 		Providers.Credentials({
 			async authorize(credentials) {
